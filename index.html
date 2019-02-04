@@ -13,16 +13,16 @@
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
 </head>
 <body>
-  <nav class="custom-navbar">
+  <nav id="custom-navbar">
+    <img id="logo" src="./svgs/logoViolet.svg">
     <input id="searchBar" type="text" placeholder="Type here to search...">
-    <h1 id="mainTitle">Aspire.io</h1>
     <div>
       <p id="profileInfo">John Doe</p>
       <img id="profileIcon" src="./svgs/profile_image.svg">
     </div>
   </nav>
   <div id="side-menu" class="side-nav">
-    <button class="btn-menu" onclick="openSlideMenu()"><img id="navArrow" src="./svgs/arrow_right.svg"></button>
+    <button class="btn-menu" onclick="openSlideMenu()"><img id="navArrow" src="./svgs/arrow_right.svg"><img id="logoSide" src="./svgs/logoWhite.svg"></button>
     <a id="firstMenuItem" href="#"><img src="./svgs/home.svg"><span class="description-hidden menuBtn">Home</span></a>
     <a href="#"><img src="./svgs/calendar.svg"><span class="description-hidden menuBtn">Calendar</span></a>
     <a href="#"><img src="./svgs/mail.svg"><span class="description-hidden menuBtn">Mail</span></a>

@@ -5,7 +5,7 @@ body {
   color: #22252c;
 }
 
-.custom-navbar {
+#custom-navbar {
   background-color: #fff;
   overflow: hidden;
   position: absolute;
@@ -20,15 +20,7 @@ body {
   color: #222;
 }
 
-#mainTitle {
-  position: absolute;
-  top: 0px;
-  left: 45%;
-  font-family: 'IBM Plex Serif', serif;
-  font-weight: 300;
-}
-
-.custom-navbar a {
+#custom-navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
@@ -119,7 +111,7 @@ body {
   font-size: 18px;
   outline: none;
   border-radius: 40px;
-  border: 1px solid #e8e9f3;
+  border: 1px solid rgba(88,74,105, 0.2);
   color: #22252c;
   transition: 0.5s;
 }
@@ -137,6 +129,21 @@ body {
   right: 30px;
   width: 30px;
 }
+
+#logo {
+  width: 40px;
+  margin-left: 20px;
+  transition: 0.5s;
+}
+
+#navArrow {
+    display: block;
+    padding-left: 40px;
+  }
+
+  #logoSide {
+    display: none;
+  }
 
 @media only screen and (max-width: 600px) {
   .btn-menu {
@@ -172,5 +179,21 @@ body {
     background-color: #c0b3a0;
     border-radius: 30px;
     margin-left: 0px;
+  }
+
+  #logo {
+    width: 0px;
+    margin-left: 0px;
+    transition: 0.1s;
+  }
+
+  #navArrow {
+    display: none;
+  }
+
+  #logoSide {
+    display: block;
+    padding-left: 10px;
+    width: 40px;
   }
 }
