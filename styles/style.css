@@ -1,8 +1,14 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: 'Open Sans', sans-serif;
   max-width: 100%;
   overflow-x: hidden;
   color: #22252c;
+  background-color: #fff;
+  background-color: rgb(232, 233, 243)
 }
 
 #custom-navbar {
@@ -45,7 +51,7 @@ body {
 .side-nav a {
   width: 100%;
   padding: 10px 10px 10px 15px;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 22px;
   color: #ccc;
   display: block;
@@ -81,7 +87,11 @@ body {
 
 .side-nav .bottomMenuBtn {
   position: absolute;
-  bottom: 70px;
+  bottom: 20px;
+}
+
+.menuBtnIcon {
+  margin-top: -6px;
 }
 
 #firstMenuItem{
@@ -108,7 +118,7 @@ body {
   margin-left: 20px;
   width: 300px;
   height: 40px;
-  font-size: 18px;
+  font-size: 14px;
   outline: none;
   border-radius: 40px;
   border: 1px solid rgba(88,74,105, 0.2);
@@ -118,8 +128,8 @@ body {
 
 #profileInfo {
   position: absolute;
-  top: 18px;
-  right: 80px;
+  top: 17px;
+  right: 70px;
   color: #3f3250;
 }
 
@@ -141,11 +151,48 @@ body {
     padding-left: 40px;
   }
 
-  #logoSide {
-    display: none;
-  }
+#logoSide {
+  display: none;
+}
 
-@media only screen and (max-width: 600px) {
+#drop-down {
+  display: none;
+  width: 140px;
+  position: absolute;
+  top: 80px;
+  right: 0px;
+  z-index: 1;
+  background-color: #fff;
+  transition: 0.5s;
+}
+
+.customUl {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.drop-down-item {
+  width: 100%;
+  overflow-wrap: break-word;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgb(232, 233, 243);
+  text-decoration: none;
+}
+
+.drop-down-item a {
+  color: #22252c;
+}
+
+#userInfo {
+  height: 100%;
+}
+
+#userInfo:hover > #drop-down {
+  height: 100px;
+}
+
+@media only screen and (max-width: 700px) {
   .btn-menu {
     pointer-events: none;
   }
@@ -195,5 +242,18 @@ body {
     display: block;
     padding-left: 10px;
     width: 40px;
+  }
+
+  #searchBar {
+    margin-left: 0px;
+    width: 70%;
+  }
+
+  #custom-navbar {
+    padding-left: 70px;
+  }
+
+  #profileInfo {
+    display: none;
   }
 }

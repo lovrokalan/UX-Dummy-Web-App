@@ -2,34 +2,48 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>UX Web App Design</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="./styles/style.css">
   <link rel="stylesheet" href="./styles/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
   <nav id="custom-navbar">
     <img id="logo" src="./svgs/logoViolet.svg">
     <input id="searchBar" type="text" placeholder="Type here to search...">
-    <div>
+    
+    <div id="userInfo">
       <p id="profileInfo">John Doe</p>
       <img id="profileIcon" src="./svgs/profile_image.svg">
     </div>
+    
+    
   </nav>
   <div id="side-menu" class="side-nav">
     <button class="btn-menu" onclick="openSlideMenu()"><img id="navArrow" src="./svgs/arrow_right.svg"><img id="logoSide" src="./svgs/logoWhite.svg"></button>
-    <a id="firstMenuItem" href="#"><img src="./svgs/home.svg"><span class="description-hidden menuBtn">Home</span></a>
-    <a href="#"><img src="./svgs/calendar.svg"><span class="description-hidden menuBtn">Calendar</span></a>
-    <a href="#"><img src="./svgs/mail.svg"><span class="description-hidden menuBtn">Mail</span></a>
-    <a href="#"><img src="./svgs/folder.svg"></i><span class="description-hidden menuBtn">Files</span></a>
-    <a class="bottomMenuBtn" href="#"><img src="./svgs/settings.svg"></i><span class="description-hidden menuBtn">Settings</span></a>
+    <a id="firstMenuItem" href="#"><img class="menuBtnIcon" src="./svgs/home.svg"><span class="description-hidden menuBtn">Home</span></a>
+    <a href="#"><img class="menuBtnIcon" src="./svgs/calendar.svg"><span class="description-hidden menuBtn">Calendar</span></a>
+    <a href="#"><img class="menuBtnIcon" src="./svgs/mail.svg"><span class="description-hidden menuBtn">Mail</span></a>
+    <a href="#"><img class="menuBtnIcon" src="./svgs/folder.svg"></i><span class="description-hidden menuBtn">Files</span></a>
+    <a class="bottomMenuBtn" href="#"><img class="menuBtnIcon" src="./svgs/settings.svg"></i><span class="description-hidden menuBtn">Settings</span></a>
   </div>
   
+  <div id="drop-down">
+    <ul class="customUl">
+      <li class="drop-down-item">
+        <a href="#">Settings</a>
+      </li>
+      <li class="drop-down-item">
+        <a href="#">Log Out</a>
+      </li>
+    </ul>
+  </div>
+
   <div id="main">
     
   </div>

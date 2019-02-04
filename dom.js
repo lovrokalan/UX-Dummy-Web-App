@@ -33,3 +33,18 @@ function openSlideMenu() {
     slideMenuMinified = true;
   }
 }
+
+var dropdownUser = document.getElementById('drop-down');
+var usernameLogo = document.getElementById('userInfo');
+  usernameLogo.addEventListener('mouseover', openDropdown);
+  usernameLogo.addEventListener('mouseout', closeDropdown);
+  dropdownUser.addEventListener('mouseover', openDropdown);
+  dropdownUser.addEventListener('mouseout', closeDropdown); 
+
+function openDropdown() {
+  dropdownUser.style.display = 'block';
+}  
+
+function closeDropdown() {
+  dropdownUser.style.display = 'none';
+} 
