@@ -22,10 +22,9 @@
       <img id="profileIcon" src="./svgs/profile_image.svg">
     </div>
     
-    
   </nav>
   <div id="side-menu" class="side-nav">
-    <button class="btn-menu" onclick="openSlideMenu()"><img id="navArrow" src="./svgs/arrow_right.svg"><img id="logoSide" src="./svgs/logoWhite.svg"></button>
+    <button class="btn-menu" onclick="slideMenu()"><img id="navArrow" src="./svgs/arrow_right.svg"><img id="logoSide" src="./svgs/logoWhite.svg"></button>
     <a id="firstMenuItem" href="#"><img class="menuBtnIcon" src="./svgs/home.svg"><span class="description-hidden menuBtn">Home</span></a>
     <a href="#"><img class="menuBtnIcon" src="./svgs/calendar.svg"><span class="description-hidden menuBtn">Calendar</span></a>
     <a href="#"><img class="menuBtnIcon" src="./svgs/mail.svg"><span class="description-hidden menuBtn">Mail</span></a>
@@ -45,7 +44,32 @@
   </div>
 
   <div id="main">
-    
+    <div class="container-fluid">
+      <div class="row">
+
+        <div id="leftMain" class="col-xl-6 col-lg-6 padding-box">
+          <h3>Tasks:</h3>
+          <div class="taskItem">
+            <span class="task">Create end of week report.</span>
+            <span class="editTaskBtn"><a href="#"><img src="./svgs/edit.svg"></span></a><span class="deleteTaskBtn"><a href="#"><img src="./svgs/delete.svg"></a></span>
+          </div>
+          <div class="taskItem">
+            <span class="task">Create end of week report.</span>
+            <span class="editTaskBtn"><a href="#"><img src="./svgs/edit.svg"></span></a><span class="deleteTaskBtn"><a href="#"><img
+                  src="./svgs/delete.svg"></a></span>
+          </div>
+          <div class="taskItem" style="border-bottom:0">
+            <span class="task">Create end of week report. To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS
+            property.
+            The example below shows how to change the color and the left margin of a element:</span>
+            <span class="editTaskBtn"><a href="#"><img src="./svgs/edit.svg"></span></a><span class="deleteTaskBtn"><a href="#"><img
+                  src="./svgs/delete.svg"></a></span>
+          </div>
+        </div>
+
+        <div id="rightMain" class="col-xl-6 col-lg-6 padding-box"></div>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="

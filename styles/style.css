@@ -100,11 +100,9 @@ body {
 
 #main {
   transition: margin-left 0.5s;
-  margin-top: 80px;
-  margin-left: 100px;
-  padding: 20px;
-  overflow: hidden;
-  width: 100%;
+  margin-top: 60px;
+  margin-left: 90px;
+  padding: 20px 0px 20px 20px;
 }
 
 .description-hidden {
@@ -192,9 +190,78 @@ body {
   height: 100px;
 }
 
+#leftMain {
+  background-color: #fff;
+  padding-bottom: 10px;
+}
+
+#rightMain {
+  background-color: #fff;
+  height: 400px;
+}
+
+.padding-box{
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  background-clip:padding-box;
+}
+
+h3 {
+  text-align: center;
+  font-weight: 600;
+  color: #22252c;
+}
+
+.taskItem {
+  margin-top: 16px;
+  border-bottom: 2px solid #e8e9f3;
+  padding-bottom: 16px;
+}
+
+.task {
+  display: inline-block;
+  width: 82%;
+}
+
+.task-name {
+  color: #22252c;
+}
+
+.editTaskBtn {
+  position: absolute;
+  right: 45px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: -5px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.editTaskBtn:hover {
+  background-color: #584a69;
+}
+
+.deleteTaskBtn {
+  position: absolute;
+  right: 10px;
+  padding: 5px;
+  margin-right: 5px;
+  margin-top: -5px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.deleteTaskBtn:hover {
+  background-color: #584a69;
+}
+
 @media only screen and (max-width: 700px) {
   .btn-menu {
     pointer-events: none;
+  }
+
+  #main {
+    margin-left: 40px;
   }
 
   .side-nav {
@@ -255,5 +322,9 @@ body {
 
   #profileInfo {
     display: none;
+  }
+
+  .task {
+    width: 70%;
   }
 }
